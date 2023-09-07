@@ -1,0 +1,140 @@
+:root {
+    --bacground-col: rgb(12, 111, 232);
+    --label-col: rgba(0, 0, 0, 0.46)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bacground-col);
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 60vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+
+    /* margin: 0 auto; */
+
+    height: max-content;
+    padding: 20px;
+    border-radius: 10px;
+
+
+
+    background-color: rgba(22, 33, 43, 0.649);
+}
+#search{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+#enter-btn {
+    border: 0;
+    padding: 20px;
+    font-size: 30px;
+    background-color: rgb(58, 58, 208);
+    color: white;
+    border-radius: 5px;
+    height: inherit;
+
+}
+
+#city-inp {
+    border: 1px solid rgb(160, 160, 210);
+     width: 30vw;
+    padding: 20px;
+    font-size: 30px;
+
+    border-radius:10px ;
+
+
+}
+#saved-cities {
+    display:flex;
+    align-items: center;
+    gap: 5px;
+
+    flex-wrap: wrap;
+    
+    border: 1px double whitesmoke;
+    border-radius:10px ;
+    background-color: var(--bacground-col);
+    width: inherit;
+    padding: 20px;
+}
+.saved {
+    flex-grow: 1;
+    max-width: fit-content;
+
+    background-color: var(--label-col);
+    color: white;
+    font-size: 26px;
+    user-select: none;
+    cursor: pointer;
+    padding: 10px;
+    
+
+    border: 1px solid white;
+    border-radius: 25px;
+
+}
+
+
+/* .saved>button {
+    background-color: transparent;
+    color: inherit;
+    border: 0;
+    font-size: 16px;
+
+}
+
+.saved button:hover {
+    color: tomato;
+
+}
+
+ */
+
+#weather-out {
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+@media (max-width:430px) {
+    #city-inp {
+        padding: 5px;
+        font-size: 22px;
+      
+    }
+    #enter-btn{
+        font-size: 16px;
+        padding: 10px;
+        
+    }
+    #saved-cities{
+        padding: 5px;
+    }
+    .saved{
+        font-size: 13px;
+        padding: 3px;
+        gap: 15px;
+        
+    }
+}
