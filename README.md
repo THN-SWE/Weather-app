@@ -1,3 +1,3 @@
 # Weather-app
-weather app using open wearther api. Promises.
+weather app using open weather api. Promises.
 [screenshot](Screenshot.png)
